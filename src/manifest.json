@@ -15,7 +15,7 @@
 	"browser_action": {
 		"default_icon": "icons/offline-32.png",
 		"theme_icons": [{
-				"light": "icons/offline-32-light.png",
+				"light": "icons/offline-32.png",
 				"dark": "icons/offline-32.png",
 				"size": 32
 		}],

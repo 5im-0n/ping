@@ -4,6 +4,23 @@ let options = {};
 
 function ping(server) {
 	console.log('pinging ' + server);
+	fetch(server)
+	.then(function(response) {
+		if (response.status === 200) {
+			browser.browserAction.setIcon({
+				path: 'icons/available-32.png'
+			});
+		} else {
+			browser.browserAction.setIcon({
+				path: 'icons/offline-32.png'
+			});
+		}
+	})
+	.catch((error) => {
+		browser.browserAction.setIcon({
+			path: 'icons/offline-32.png'
+		});
+	});
 }
 
 function reloadConfig() {

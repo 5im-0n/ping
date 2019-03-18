@@ -4,6 +4,8 @@
 
 A firefox addon that pings (over http) a server you configure, and shows an icon for up status, and a different icon for down status.
 
+![ping in action](screenshot.png)
+
 ## install
 
 On amo!  

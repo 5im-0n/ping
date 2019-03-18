@@ -3,7 +3,8 @@ import { loadOptions, saveOptions } from '../utils.js';
 function getParams() {
 	return {
 		server: document.getElementById('server').value,
-		interval: parseInt(document.getElementById('interval').value)
+		interval: parseInt(document.getElementById('interval').value),
+		alert: document.getElementById('alert').checked
 	};
 };
 
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	loadOptions().then((options) => {
 		document.getElementById('server').value = options.server;
 		document.getElementById('interval').value = options.interval;
+		document.getElementById('alert').checked = options.alert;
 
 		browser.runtime.sendMessage('configChanged');
 	});

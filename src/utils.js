@@ -1,7 +1,8 @@
 function loadOptions() {
 	return browser.storage.local.get({
 		server: '',
-		interval: 60
+		interval: 60,
+		alert: false
 	});
 };
 

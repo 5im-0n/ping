@@ -2,7 +2,7 @@
 
 ## What it does
 
-A firefox addon that pings a server you configure, and shows an icon for up status, and a different icon for down status.
+A firefox addon that pings (over http) a server you configure, and shows an icon for up status, and a different icon for down status.
 
 ## install
 

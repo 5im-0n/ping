@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		document.getElementById('server').value = options.server;
 		document.getElementById('interval').value = options.interval;
 		document.getElementById('alert').checked = options.alert;
-
-		browser.runtime.sendMessage('configChanged');
 	});
 
 });
